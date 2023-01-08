@@ -12,6 +12,7 @@ const sendSms = (phone, message) => {
             to: phone
         })
         .then((message) => console.log(message.sid))
+        .catch((err) => console.log(err))
 }
 
 module.exports = sendSms

@@ -9,10 +9,10 @@ app.use(bodyParser.urlencoded({ extended: false }))
 app.use(cors())
 app.use(bodyParser.json())
 
-const port = 5000
+const port = 8000
 
 // Create users endpoint
-app.post('/users', (req, res) => {
+app.post('/api/users', (req, res) => {
     const { text, phone } = req.body
     const user = {
         text,
